@@ -38,23 +38,33 @@
 #include "3600fs.h"
 #include "disk.h"
 
-// Simple parsing function to separate filename from directory name
-void filename_parser(char *path, int* acc){
-  int found = 0; // Flag representing location of first '/'.
-  char* temp = path;
+
+// Parses path, seperating file name from directory 
+// Returns 0 if there is only one slash, path becomes file name
+// Returns -1 if there is zero or more than one slash, path remains the same.
+int filename_parser(char* path){
+    int found = 0;
+    int numslash = 0;
   
-  // Finds how many /s are in string. If only 1 /, path becomes filename.
-  while(*temp){
-    if(*temp == '/'){
-      (*acc)++;
-      if(found == 0){
-	found = 1;
-	path = temp; // Path is now the file name.
+    char* temp = path;  // Temp copy of path to traverse through.
+    char* firstslash = path; // Will point to location of first slash.
+    while(*temp){
+      if(*temp = '/'){
+        numslash++;
+        if(found == 0){
+          found = 1;
+          firstslash = temp;
+        }
       }
       temp++;
     }
-  }
-}
+    if(numslash==1){
+      path = firstslash;
+      return 0;
+    }
+   return -1;
+ }
+
 
 /*
  * Initialize filesystem. Read in file system metadata and initialize
@@ -239,15 +249,8 @@ static int vfs_readdir(const char *path, void *buf, fuse_fill_dir_t filler,
 static int vfs_create(const char *path, mode_t mode, struct fuse_file_info *fi) {      
   // Next, we want to check the path for errors and extract file name.
 
-  int acc = 0; // Number of '/'s in string
-  int* acc_ptr = &acc;
-  
-  filename_parser(path, acc_ptr);
-
-  // TODO: Confirm that '/'s aren't allowed in file names.
-
-  if(acc != 1) // If the path is malformed, we have a bad path and
-    return -1; // return the error code, -1.
+  if(filename_parser(path)!=0) // Check for valid path and set filename.
+    return -1;
 
   // Create a temp block and format it to be a directory entry.
   dirent direntblock;
