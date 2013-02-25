@@ -105,7 +105,7 @@ static void vfs_unmount (void *private_data) {
   dread(0,temp);
   memcpy(&volblock,temp,sizeof(volblock));
   
-  vcb.mounted = 0; // Flip mounted bit, indicating safe dismount.
+  volblock.mounted = 0; // Flip mounted bit, indicating safe dismount.
 
   memcpy(&volblock,temp,sizeof(volblock));
   dwrite(0, temp);
@@ -139,7 +139,6 @@ static int vfs_getattr(const char *path, struct stat *stbuf) {
 
   /* 3600: YOU MUST UNCOMMENT BELOW AND IMPLEMENT THIS CORRECTLY */
   
-  /*
   if (The path represents the root directory)
     stbuf->st_mode  = 0777 | S_IFDIR;
   else 
@@ -152,7 +151,6 @@ static int vfs_getattr(const char *path, struct stat *stbuf) {
   stbuf->st_ctime   = // create time
   stbuf->st_size    = // file size
   stbuf->st_blocks  = // file size in blocks
-    */
 
   return 0;
 }
