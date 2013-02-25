@@ -49,7 +49,7 @@ int filename_parser(char* path){
     char* temp = path;  // Temp copy of path to traverse through.
     char* firstslash = path; // Will point to location of first slash.
     while(*temp){
-      if(*temp = '/'){
+      if(*temp == '/'){
         numslash++;
         if(found == 0){
           found = 1;
