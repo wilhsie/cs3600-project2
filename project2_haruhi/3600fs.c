@@ -138,21 +138,51 @@ static int vfs_getattr(const char *path, struct stat *stbuf) {
   stbuf->st_blksize = BLOCKSIZE;
 
   /* 3600: YOU MUST UNCOMMENT BELOW AND IMPLEMENT THIS CORRECTLY */
-  
-  if (The path represents the root directory)
-    stbuf->st_mode  = 0777 | S_IFDIR;
-  else 
-    stbuf->st_mode  = <<file mode>> | S_IFREG;
 
-  stbuf->st_uid     = // file uid
-  stbuf->st_gid     = // file gid
-  stbuf->st_atime   = // access time 
-  stbuf->st_mtime   = // modify time
-  stbuf->st_ctime   = // create time
-  stbuf->st_size    = // file size
-  stbuf->st_blocks  = // file size in blocks
+  // TODO: Parse path so that it contains only the filename
 
-  return 0;
+  // Create a temp block and format it to be a directory entry.
+  dirent direntblock;
+  char temp[BLOCKSIZE];
+  memset(temp,0,BLOCKSIZE);
+
+  // Traverse through directory entries
+  for(int i = 1; i < 101; i++){
+    dread(i,temp);
+    // Mold temp data to dirent structure direntblock
+    memcpy(&direntblock, temp, sizeof(BLOCKSIZE));
+    // If path does not exist then we cannot grab its attributes
+    if(direntblock.valid && (strcmp(direntblock.name, path) != 0)){
+      printf("Error: File does not exist, cannot get attributes");
+      return -ENOENT;
+    }
+    else if(direntblock.valid && (strcmp(direntblock.name, path) == 0)){
+      // We have a match, path == direntblock.name
+      // Break and copy direntblock info into memory
+
+      // Assume root directory, if we add multiple directories then..
+      // FIXME:
+      /* 
+         if(The path represents the root directory)
+	   stbuf->st_mode = 0777 | S_IFDIR;
+	 else
+	   stbuf->st_mode = <<file mode>> | S_IFREG;
+      */
+      // ELSE: we just keep this
+      stbuf->st_mode  = 0777 | S_IFDIR;
+      
+      stbuf->st_uid = direntblock.userid; 
+      stbuf->st_gid = direntblock.groupid;
+      stbuf->st_atime = direntblock.access_time; 
+      stbuf->st_mtime = direntblock.modify_time;
+      stbuf->st_ctime = direntblock.create_time;
+      stbuf->st_size = direntblock.size;
+      stbuf->st_blocks = (int) (direntblock.size / BLOCKSIZE);
+    }
+    else{
+      // All hell has broken loose, return the infamous -1
+      return -1;
+    }
 }
 
 /*
@@ -227,6 +257,7 @@ static int vfs_create(const char *path, mode_t mode, struct fuse_file_info *fi) 
   // Traverse through directory entries.
   for(int i = 1; i < 101; i++){
     dread(i,temp);
+    // Put temp data into dirent structure direntblock
     memcpy(&direntblock,temp,sizeof(BLOCKSIZE));
     // Compare current valid directory entry name to argument string 'path'
     if(direntblock.valid && (strcmp(direntblock.name, path) == 0)){
