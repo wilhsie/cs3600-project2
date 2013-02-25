@@ -179,13 +179,20 @@ static int vfs_getattr(const char *path, struct stat *stbuf) {
 	   stbuf->st_mode = <<file mode>> | S_IFREG;
       */
       // ELSE: we just keep this
+      struct tm * tm1;
+      struct tm * tm2;
+      struct tm * tm3;
+      tm1 = localtime(&((direntblock.access_time).tv_sec));
+      tm2 = localtime(&((direntblock.modify_time).tv_sec));
+      tm3 = localtime(&((direntblock.create_time).tv_sec));
+
       stbuf->st_mode  = 0777 | S_IFDIR;
       
       stbuf->st_uid = direntblock.userid; 
       stbuf->st_gid = direntblock.groupid;
-      stbuf->st_atime = direntblock.access_time; 
-      stbuf->st_mtime = direntblock.modify_time;
-      stbuf->st_ctime = direntblock.create_time;
+      stbuf->st_atime = mktime(tm1); 
+      stbuf->st_mtime = mktime(tm2);
+      stbuf->st_ctime = mktime(tm3);
       stbuf->st_size = direntblock.size;
       stbuf->st_blocks = (int) (direntblock.size / BLOCKSIZE);
     }
