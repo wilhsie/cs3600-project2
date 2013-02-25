@@ -193,8 +193,8 @@ static int vfs_getattr(const char *path, struct stat *stbuf) {
       // All hell has broken loose, return the infamous -1
       return -1;
     }
+  }
 }
-
 /*
  * Given an absolute path to a directory (which may or may not end in
  * '/'), vfs_mkdir will create a new directory named dirname in that
@@ -235,8 +235,7 @@ static int vfs_mkdir(const char *path, mode_t mode) {
  *
  */
 static int vfs_readdir(const char *path, void *buf, fuse_fill_dir_t filler,
-                       off_t offset, struct fuse_file_info *fi)
-{
+                       off_t offset, struct fuse_file_info *fi){
 
     return 0;
 }
