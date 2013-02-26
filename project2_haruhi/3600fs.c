@@ -164,9 +164,10 @@ static int vfs_getattr(const char *path, struct stat *stbuf) {
   memset(temp,0,BLOCKSIZE);
   
   if(filename_parser(path) == 0){ // if we are requesting a valid path
+    fprintf(stderr, "%s", path);
     if(strlen(path) == 1){ // if we are requesting attr of root directory
       dread(0, temp);
-      memcpy(%volblock, temp, sizeof(BLOCKSIZE));
+      memcpy(&volblock, temp, sizeof(BLOCKSIZE));
       
       struct tm * tm1;
       struct tm * tm2;
@@ -175,7 +176,7 @@ static int vfs_getattr(const char *path, struct stat *stbuf) {
       tm2 = localtime(&((direntblock.modify_time).tv_sec));
       tm3 = localtime(&((direntblock.create_time).tv_sec));
       
-      stbuf->stmode = (volblock.mode & 0x0000ffff) | S_IFDIR; // TODO: Check to ensure volblock.mode might always be 0777
+      stbuf->st_mode = (volblock.mode & 0x0000ffff) | S_IFDIR; // TODO: Check to ensure volblock.mode might always be 0777
       
       stbuf->st_uid = volblock.userid;
       stbuf->st_gid = volblock.groupid;
@@ -184,7 +185,8 @@ static int vfs_getattr(const char *path, struct stat *stbuf) {
       stbuf->st_ctime = mktime(tm3);
       stbuf->st_size = BLOCKSIZE;
       stbuf->st_blocks = 1;
-    } else { // if we are requesting attr of a file
+    } 
+    else { // if we are requesting attr of a file
 
       // Traverse through directory entries
       for(int i = 1; i < 101; i++){
@@ -214,7 +216,7 @@ static int vfs_getattr(const char *path, struct stat *stbuf) {
           stbuf->st_blocks = (int) (direntblock.size / BLOCKSIZE);
           // We have updated stbuf, return success.
           return 0;
-         }
+	}
       }
       // Traversed through all 100 dirents and we did not write to st_buf then...
       return -ENOENT;
