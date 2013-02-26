@@ -195,12 +195,10 @@ static int vfs_getattr(const char *path, struct stat *stbuf) {
       stbuf->st_ctime = mktime(tm3);
       stbuf->st_size = direntblock.size;
       stbuf->st_blocks = (int) (direntblock.size / BLOCKSIZE);
-    }
-    else{
-      // All hell has broken loose, return the infamous -1
-      return -1;
+      return 0;
     }
   }
+  return -1; // ERROR ERROR ERROR
 }
 /*
  * Given an absolute path to a directory (which may or may not end in
