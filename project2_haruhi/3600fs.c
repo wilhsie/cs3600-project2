@@ -187,7 +187,7 @@ static int vfs_getattr(const char *path, struct stat *stbuf) {
       stbuf->st_blocks = 1;
     } 
     else { // if we are requesting attr of a file
-
+      path++; // increase the pointer of path, to account for the leading /
       // Traverse through directory entries
       for(int i = 1; i < 101; i++){
         dread(i,temp);
