@@ -164,7 +164,6 @@ static int vfs_getattr(const char *path, struct stat *stbuf) {
   memset(temp,0,BLOCKSIZE);
   
   if(filename_parser(path) == 0){ // if we are requesting a valid path
-    fprintf(stderr, "%s", path);
     if(strlen(path) == 1){ // if we are requesting attr of root directory
       dread(0, temp);
       memcpy(&volblock, temp, sizeof(BLOCKSIZE));
@@ -188,11 +187,15 @@ static int vfs_getattr(const char *path, struct stat *stbuf) {
     } 
     else { // if we are requesting attr of a file
       path++; // increase the pointer of path, to account for the leading /
+      fprintf(stderr, "\ngetting attr of filename %s", path);
       // Traverse through directory entries
       for(int i = 1; i < 101; i++){
-        dread(i,temp);
         // Mold temp data to dirent structure direntblock
+        memset(temp,0,BLOCKSIZE);
+        dread(i,temp);
         memcpy(&direntblock, temp, sizeof(BLOCKSIZE));
+        
+        
         if(direntblock.valid && (strcmp(direntblock.name, path) == 0)){
           // We have a match, path == direntblock.name
           // Break and copy direntblock info into memory
@@ -265,7 +268,7 @@ static int vfs_mkdir(const char *path, mode_t mode) {
  */
 static int vfs_readdir(const char *path, void *buf, fuse_fill_dir_t filler,
                        off_t offset, struct fuse_file_info *fi){
-
+fprintf(stderr,"vfs_readdir called");
     return 0;
 }
 
@@ -275,37 +278,41 @@ static int vfs_readdir(const char *path, void *buf, fuse_fill_dir_t filler,
  *
  */
 static int vfs_create(const char *path, mode_t mode, struct fuse_file_info *fi) {      
-  // Next, we want to check the path for errors and extract file name.
+  fprintf(stderr,"vfs_create called");
 
   if(filename_parser(path) != 0) // Check for valid path and set filename.
     return -1;
-
-  printf("%s", path);
+  
+  path++; //increment path 
+  printf("\nPATH: %s\n", path);
 
   // Create a temp block and format it to be a directory entry.
   dirent direntblock;
   char temp[BLOCKSIZE];
-  memset(temp,0,BLOCKSIZE);
-
   // Traverse through directory entries.
   for(int i = 1; i < 101; i++){
+    memset(temp,0,BLOCKSIZE);
     dread(i,temp);
     // Put temp data into dirent structure direntblock
-    memcpy(&direntblock,temp,sizeof(BLOCKSIZE));
+    memcpy(&direntblock,temp,sizeof(BLOCKSIZE));   
+ 
     // Compare current valid directory entry name to argument string 'path'
-    if(direntblock.valid && (strcmp(direntblock.name, path) == 0)){
+    if(direntblock.valid == 1){
+      fprintf(stderr,"\ndirentblock[%i] name: %s",i, direntblock.name);
       // The path already exists so we cannot create it.
       printf("Error: File already exists.");
       return -EEXIST;
     }
   }
-
   // Traverse through directory entries, we now know path does not exist.
   for(int i = 1; i < 101; i++){
+    memset(temp,0,BLOCKSIZE);
     dread(i, temp);
     memcpy(&direntblock,temp,sizeof(BLOCKSIZE));
+    fprintf(stderr,"dirent[%i] valid:%i\n",i,direntblock.valid);
     // Find first invalid block, flip valid bit, create dirent with path as name
     if(!direntblock.valid){
+      fprintf(stderr,"Writing to dirent[%i].\n");
       direntblock.valid = 1;
       direntblock.userid = getuid();
       direntblock.groupid = getgid();
@@ -313,14 +320,16 @@ static int vfs_create(const char *path, mode_t mode, struct fuse_file_info *fi) 
       clock_gettime(CLOCK_REALTIME, &direntblock.access_time);
       clock_gettime(CLOCK_REALTIME, &direntblock.modify_time);
       clock_gettime(CLOCK_REALTIME, &direntblock.create_time);
-      strcpy(direntblock.name, path);
-      
+      strcpy(direntblock.name, path); //FIXME: potential error
+      fprintf(stderr,"\nNew direntblock name: %s", direntblock.name);
       // Write direntblock to a character buffer then write to disk
+      memset(temp,0,BLOCKSIZE);
       memcpy(temp,&direntblock,sizeof(BLOCKSIZE));
       dwrite(i, temp);
       return 0;
     }
   }
+  fprintf(stderr,"RETURNING -1");
   // If there is no more room on the disk return -1;
   return -1;
 }
