@@ -96,10 +96,16 @@ static void* vfs_mount(struct fuse_conn_info *conn) {
   }
   if(volblock.mounted != 0){
    fprintf(stderr,"Invalid disk: Disk did not unmount correctly.");    
+   // For now dismount, we will handle bad sectors/blocks later (heh ehe.. heh)
+   dunconnect();
   }
   // TODO: Possibly check dirents for invalid info 
   // (e.g. missing data in dirents). Deal with them maybe.
-  return NULL;
+  // Else, magic number is correct (its our drive) and was unmounted correctly
+  // So we set mounted to be 1 and write vcb to disk
+  volblock.mounted = 1;
+  memcpy(temp,&volblock,sizeof(BLOCKSIZE));
+  dwrite(0,temp);
 }
 
 /*
@@ -161,12 +167,7 @@ static int vfs_getattr(const char *path, struct stat *stbuf) {
     dread(i,temp);
     // Mold temp data to dirent structure direntblock
     memcpy(&direntblock, temp, sizeof(BLOCKSIZE));
-    // If path does not exist then we cannot grab its attributes
-    if(direntblock.valid && (strcmp(direntblock.name, path) != 0)){
-      printf("Error: File does not exist, cannot get attributes");
-      return -ENOENT;
-    }
-    else if(direntblock.valid && (strcmp(direntblock.name, path) == 0)){
+    if(direntblock.valid && (strcmp(direntblock.name, path) == 0)){
       // We have a match, path == direntblock.name
       // Break and copy direntblock info into memory
 
@@ -195,12 +196,12 @@ static int vfs_getattr(const char *path, struct stat *stbuf) {
       stbuf->st_ctime = mktime(tm3);
       stbuf->st_size = direntblock.size;
       stbuf->st_blocks = (int) (direntblock.size / BLOCKSIZE);
-    }
-    else{
-      // All hell has broken loose, return the infamous -1
-      return -1;
+      // We have updated stbuf, return success.
+      return 0;
     }
   }
+  // Traversed through all 100 dirents and we did not write to st_buf then...
+  return -ENOENT;
 }
 /*
  * Given an absolute path to a directory (which may or may not end in
@@ -255,8 +256,10 @@ static int vfs_readdir(const char *path, void *buf, fuse_fill_dir_t filler,
 static int vfs_create(const char *path, mode_t mode, struct fuse_file_info *fi) {      
   // Next, we want to check the path for errors and extract file name.
 
-  if(filename_parser(path)!=0) // Check for valid path and set filename.
+  if(filename_parser(path) != 0) // Check for valid path and set filename.
     return -1;
+
+  printf("%s", path);
 
   // Create a temp block and format it to be a directory entry.
   dirent direntblock;
@@ -297,6 +300,8 @@ static int vfs_create(const char *path, mode_t mode, struct fuse_file_info *fi) 
       return 0;
     }
   }
+  // If there is no more room on the disk return -1;
+  return -1;
 }
 
 /*
