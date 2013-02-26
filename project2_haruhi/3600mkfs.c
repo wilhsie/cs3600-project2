@@ -32,6 +32,7 @@ vcb make_volblock(int num_dblocks){
 
   vcb volblock;
   volblock.disk_id = MAGICNUM;
+  volblock.mounted = 0;
   volblock.blocksize = BLOCKSIZE;
   
   volblock.de_start = BLOCKSIZE + 1;

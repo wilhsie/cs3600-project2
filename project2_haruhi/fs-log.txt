@@ -1172,3 +1172,2335 @@ vfs_getattr called
    unique: 5, error: -1 (Operation not permitted), outsize: 16
 vfs_unmount called
 Disk usage: 6 reads, 1 writes
+RUNNING './3600fs -s -d /tmp/3600fs.fyWC73'
+unique: 1, opcode: INIT (26), nodeid: 0, insize: 56
+INIT: 7.12
+flags=0x0000007b
+max_readahead=0x00020000
+vfs_mount called
+Invalid disk: Disk did not unmount correctly.   INIT: 7.8
+   flags=0x00000001
+   max_readahead=0x00020000
+   max_write=0x00020000
+   unique: 1, error: 0 (Success), outsize: 40
+unique: 2, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test1.txt
+vfs_getattr called
+   unique: 2, error: -1 (Operation not permitted), outsize: 16
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test1.txt
+vfs_getattr called
+   unique: 3, error: -1 (Operation not permitted), outsize: 16
+unique: 4, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test2.txt
+vfs_getattr called
+   unique: 4, error: -1 (Operation not permitted), outsize: 16
+unique: 5, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test2.txt
+vfs_getattr called
+   unique: 5, error: -1 (Operation not permitted), outsize: 16
+unique: 6, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 6, error: -1 (Operation not permitted), outsize: 16
+unique: 7, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 7, error: -1 (Operation not permitted), outsize: 16
+unique: 8, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test2.txt
+vfs_getattr called
+   unique: 8, error: -1 (Operation not permitted), outsize: 16
+vfs_unmount called
+Disk usage: 9 reads, 1 writes
+RUNNING './3600fs -s -d /tmp/3600fs.fyWC73'
+unique: 1, opcode: INIT (26), nodeid: 0, insize: 56
+INIT: 7.12
+flags=0x0000007b
+max_readahead=0x00020000
+vfs_mount called
+Invalid disk: Disk did not unmount correctly.   INIT: 7.8
+   flags=0x00000001
+   max_readahead=0x00020000
+   max_write=0x00020000
+   unique: 1, error: 0 (Success), outsize: 40
+unique: 2, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test1.txt
+vfs_getattr called
+   unique: 2, error: -1 (Operation not permitted), outsize: 16
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 3, error: -1 (Operation not permitted), outsize: 16
+vfs_unmount called
+Disk usage: 4 reads, 1 writes
+RUNNING './3600fs -s -d /tmp/3600fs.fyWC73'
+unique: 1, opcode: INIT (26), nodeid: 0, insize: 56
+INIT: 7.12
+flags=0x0000007b
+max_readahead=0x00020000
+vfs_mount called
+Invalid disk: Disk did not unmount correctly.   INIT: 7.8
+   flags=0x00000001
+   max_readahead=0x00020000
+   max_write=0x00020000
+   unique: 1, error: 0 (Success), outsize: 40
+unique: 2, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file0
+vfs_getattr called
+   unique: 2, error: -1 (Operation not permitted), outsize: 16
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file1
+vfs_getattr called
+   unique: 3, error: -1 (Operation not permitted), outsize: 16
+unique: 4, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file2
+vfs_getattr called
+   unique: 4, error: -1 (Operation not permitted), outsize: 16
+unique: 5, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file3
+vfs_getattr called
+   unique: 5, error: -1 (Operation not permitted), outsize: 16
+unique: 6, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file4
+vfs_getattr called
+   unique: 6, error: -1 (Operation not permitted), outsize: 16
+unique: 7, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file5
+vfs_getattr called
+   unique: 7, error: -1 (Operation not permitted), outsize: 16
+unique: 8, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file6
+vfs_getattr called
+   unique: 8, error: -1 (Operation not permitted), outsize: 16
+unique: 9, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file7
+vfs_getattr called
+   unique: 9, error: -1 (Operation not permitted), outsize: 16
+unique: 10, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file8
+vfs_getattr called
+   unique: 10, error: -1 (Operation not permitted), outsize: 16
+unique: 11, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file9
+vfs_getattr called
+   unique: 11, error: -1 (Operation not permitted), outsize: 16
+unique: 12, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file10
+vfs_getattr called
+   unique: 12, error: -1 (Operation not permitted), outsize: 16
+unique: 13, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file11
+vfs_getattr called
+   unique: 13, error: -1 (Operation not permitted), outsize: 16
+unique: 14, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file12
+vfs_getattr called
+   unique: 14, error: -1 (Operation not permitted), outsize: 16
+unique: 15, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file13
+vfs_getattr called
+   unique: 15, error: -1 (Operation not permitted), outsize: 16
+unique: 16, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file14
+vfs_getattr called
+   unique: 16, error: -1 (Operation not permitted), outsize: 16
+unique: 17, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file15
+vfs_getattr called
+   unique: 17, error: -1 (Operation not permitted), outsize: 16
+unique: 18, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file16
+vfs_getattr called
+   unique: 18, error: -1 (Operation not permitted), outsize: 16
+unique: 19, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file17
+vfs_getattr called
+   unique: 19, error: -1 (Operation not permitted), outsize: 16
+unique: 20, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file18
+vfs_getattr called
+   unique: 20, error: -1 (Operation not permitted), outsize: 16
+unique: 21, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file19
+vfs_getattr called
+   unique: 21, error: -1 (Operation not permitted), outsize: 16
+unique: 22, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file20
+vfs_getattr called
+   unique: 22, error: -1 (Operation not permitted), outsize: 16
+unique: 23, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file21
+vfs_getattr called
+   unique: 23, error: -1 (Operation not permitted), outsize: 16
+unique: 24, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file22
+vfs_getattr called
+   unique: 24, error: -1 (Operation not permitted), outsize: 16
+unique: 25, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file23
+vfs_getattr called
+   unique: 25, error: -1 (Operation not permitted), outsize: 16
+unique: 26, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file24
+vfs_getattr called
+   unique: 26, error: -1 (Operation not permitted), outsize: 16
+unique: 27, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file25
+vfs_getattr called
+   unique: 27, error: -1 (Operation not permitted), outsize: 16
+unique: 28, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file26
+vfs_getattr called
+   unique: 28, error: -1 (Operation not permitted), outsize: 16
+unique: 29, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file27
+vfs_getattr called
+   unique: 29, error: -1 (Operation not permitted), outsize: 16
+unique: 30, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file28
+vfs_getattr called
+   unique: 30, error: -1 (Operation not permitted), outsize: 16
+unique: 31, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file29
+vfs_getattr called
+   unique: 31, error: -1 (Operation not permitted), outsize: 16
+unique: 32, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file30
+vfs_getattr called
+   unique: 32, error: -1 (Operation not permitted), outsize: 16
+unique: 33, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file31
+vfs_getattr called
+   unique: 33, error: -1 (Operation not permitted), outsize: 16
+unique: 34, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file32
+vfs_getattr called
+   unique: 34, error: -1 (Operation not permitted), outsize: 16
+unique: 35, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file33
+vfs_getattr called
+   unique: 35, error: -1 (Operation not permitted), outsize: 16
+unique: 36, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file34
+vfs_getattr called
+   unique: 36, error: -1 (Operation not permitted), outsize: 16
+unique: 37, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file35
+vfs_getattr called
+   unique: 37, error: -1 (Operation not permitted), outsize: 16
+unique: 38, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file36
+vfs_getattr called
+   unique: 38, error: -1 (Operation not permitted), outsize: 16
+unique: 39, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file37
+vfs_getattr called
+   unique: 39, error: -1 (Operation not permitted), outsize: 16
+unique: 40, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file38
+vfs_getattr called
+   unique: 40, error: -1 (Operation not permitted), outsize: 16
+unique: 41, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file39
+vfs_getattr called
+   unique: 41, error: -1 (Operation not permitted), outsize: 16
+unique: 42, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file40
+vfs_getattr called
+   unique: 42, error: -1 (Operation not permitted), outsize: 16
+unique: 43, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file41
+vfs_getattr called
+   unique: 43, error: -1 (Operation not permitted), outsize: 16
+unique: 44, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file42
+vfs_getattr called
+   unique: 44, error: -1 (Operation not permitted), outsize: 16
+unique: 45, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file43
+vfs_getattr called
+   unique: 45, error: -1 (Operation not permitted), outsize: 16
+unique: 46, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file44
+vfs_getattr called
+   unique: 46, error: -1 (Operation not permitted), outsize: 16
+unique: 47, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file45
+vfs_getattr called
+   unique: 47, error: -1 (Operation not permitted), outsize: 16
+unique: 48, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file46
+vfs_getattr called
+   unique: 48, error: -1 (Operation not permitted), outsize: 16
+unique: 49, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file47
+vfs_getattr called
+   unique: 49, error: -1 (Operation not permitted), outsize: 16
+unique: 50, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file48
+vfs_getattr called
+   unique: 50, error: -1 (Operation not permitted), outsize: 16
+unique: 51, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file49
+vfs_getattr called
+   unique: 51, error: -1 (Operation not permitted), outsize: 16
+unique: 52, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file50
+vfs_getattr called
+   unique: 52, error: -1 (Operation not permitted), outsize: 16
+unique: 53, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file51
+vfs_getattr called
+   unique: 53, error: -1 (Operation not permitted), outsize: 16
+unique: 54, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file52
+vfs_getattr called
+   unique: 54, error: -1 (Operation not permitted), outsize: 16
+unique: 55, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file53
+vfs_getattr called
+   unique: 55, error: -1 (Operation not permitted), outsize: 16
+unique: 56, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file54
+vfs_getattr called
+   unique: 56, error: -1 (Operation not permitted), outsize: 16
+unique: 57, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file55
+vfs_getattr called
+   unique: 57, error: -1 (Operation not permitted), outsize: 16
+unique: 58, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file56
+vfs_getattr called
+   unique: 58, error: -1 (Operation not permitted), outsize: 16
+unique: 59, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file57
+vfs_getattr called
+   unique: 59, error: -1 (Operation not permitted), outsize: 16
+unique: 60, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file58
+vfs_getattr called
+   unique: 60, error: -1 (Operation not permitted), outsize: 16
+unique: 61, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file59
+vfs_getattr called
+   unique: 61, error: -1 (Operation not permitted), outsize: 16
+unique: 62, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file60
+vfs_getattr called
+   unique: 62, error: -1 (Operation not permitted), outsize: 16
+unique: 63, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file61
+vfs_getattr called
+   unique: 63, error: -1 (Operation not permitted), outsize: 16
+unique: 64, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file62
+vfs_getattr called
+   unique: 64, error: -1 (Operation not permitted), outsize: 16
+unique: 65, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file63
+vfs_getattr called
+   unique: 65, error: -1 (Operation not permitted), outsize: 16
+unique: 66, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file64
+vfs_getattr called
+   unique: 66, error: -1 (Operation not permitted), outsize: 16
+unique: 67, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file65
+vfs_getattr called
+   unique: 67, error: -1 (Operation not permitted), outsize: 16
+unique: 68, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file66
+vfs_getattr called
+   unique: 68, error: -1 (Operation not permitted), outsize: 16
+unique: 69, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file67
+vfs_getattr called
+   unique: 69, error: -1 (Operation not permitted), outsize: 16
+unique: 70, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file68
+vfs_getattr called
+   unique: 70, error: -1 (Operation not permitted), outsize: 16
+unique: 71, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file69
+vfs_getattr called
+   unique: 71, error: -1 (Operation not permitted), outsize: 16
+unique: 72, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file70
+vfs_getattr called
+   unique: 72, error: -1 (Operation not permitted), outsize: 16
+unique: 73, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file71
+vfs_getattr called
+   unique: 73, error: -1 (Operation not permitted), outsize: 16
+unique: 74, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file72
+vfs_getattr called
+   unique: 74, error: -1 (Operation not permitted), outsize: 16
+unique: 75, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file73
+vfs_getattr called
+   unique: 75, error: -1 (Operation not permitted), outsize: 16
+unique: 76, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file74
+vfs_getattr called
+   unique: 76, error: -1 (Operation not permitted), outsize: 16
+unique: 77, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file75
+vfs_getattr called
+   unique: 77, error: -1 (Operation not permitted), outsize: 16
+unique: 78, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file76
+vfs_getattr called
+   unique: 78, error: -1 (Operation not permitted), outsize: 16
+unique: 79, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file77
+vfs_getattr called
+   unique: 79, error: -1 (Operation not permitted), outsize: 16
+unique: 80, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file78
+vfs_getattr called
+   unique: 80, error: -1 (Operation not permitted), outsize: 16
+unique: 81, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file79
+vfs_getattr called
+   unique: 81, error: -1 (Operation not permitted), outsize: 16
+unique: 82, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file80
+vfs_getattr called
+   unique: 82, error: -1 (Operation not permitted), outsize: 16
+unique: 83, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file81
+vfs_getattr called
+   unique: 83, error: -1 (Operation not permitted), outsize: 16
+unique: 84, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file82
+vfs_getattr called
+   unique: 84, error: -1 (Operation not permitted), outsize: 16
+unique: 85, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file83
+vfs_getattr called
+   unique: 85, error: -1 (Operation not permitted), outsize: 16
+unique: 86, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file84
+vfs_getattr called
+   unique: 86, error: -1 (Operation not permitted), outsize: 16
+unique: 87, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file85
+vfs_getattr called
+   unique: 87, error: -1 (Operation not permitted), outsize: 16
+unique: 88, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file86
+vfs_getattr called
+   unique: 88, error: -1 (Operation not permitted), outsize: 16
+unique: 89, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file87
+vfs_getattr called
+   unique: 89, error: -1 (Operation not permitted), outsize: 16
+unique: 90, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file88
+vfs_getattr called
+   unique: 90, error: -1 (Operation not permitted), outsize: 16
+unique: 91, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file89
+vfs_getattr called
+   unique: 91, error: -1 (Operation not permitted), outsize: 16
+unique: 92, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file90
+vfs_getattr called
+   unique: 92, error: -1 (Operation not permitted), outsize: 16
+unique: 93, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file91
+vfs_getattr called
+   unique: 93, error: -1 (Operation not permitted), outsize: 16
+unique: 94, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file92
+vfs_getattr called
+   unique: 94, error: -1 (Operation not permitted), outsize: 16
+unique: 95, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file93
+vfs_getattr called
+   unique: 95, error: -1 (Operation not permitted), outsize: 16
+unique: 96, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file94
+vfs_getattr called
+   unique: 96, error: -1 (Operation not permitted), outsize: 16
+unique: 97, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file95
+vfs_getattr called
+   unique: 97, error: -1 (Operation not permitted), outsize: 16
+unique: 98, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file96
+vfs_getattr called
+   unique: 98, error: -1 (Operation not permitted), outsize: 16
+unique: 99, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file97
+vfs_getattr called
+   unique: 99, error: -1 (Operation not permitted), outsize: 16
+unique: 100, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file98
+vfs_getattr called
+   unique: 100, error: -1 (Operation not permitted), outsize: 16
+unique: 101, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file99
+vfs_getattr called
+   unique: 101, error: -1 (Operation not permitted), outsize: 16
+unique: 102, opcode: OPENDIR (27), nodeid: 1, insize: 48
+   unique: 102, error: 0 (Success), outsize: 32
+unique: 103, opcode: READDIR (28), nodeid: 1, insize: 80
+   unique: 103, error: 0 (Success), outsize: 16
+unique: 104, opcode: RELEASEDIR (29), nodeid: 1, insize: 64
+   unique: 104, error: 0 (Success), outsize: 16
+unique: 105, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file0
+vfs_getattr called
+   unique: 105, error: -1 (Operation not permitted), outsize: 16
+vfs_unmount called
+Disk usage: 103 reads, 1 writes
+RUNNING './3600fs -s -d /tmp/3600fs.fyWC73'
+unique: 1, opcode: INIT (26), nodeid: 0, insize: 56
+INIT: 7.12
+flags=0x0000007b
+max_readahead=0x00020000
+vfs_mount called
+Invalid disk: Disk did not unmount correctly.   INIT: 7.8
+   flags=0x00000001
+   max_readahead=0x00020000
+   max_write=0x00020000
+   unique: 1, error: 0 (Success), outsize: 40
+unique: 2, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file0
+vfs_getattr called
+   unique: 2, error: -1 (Operation not permitted), outsize: 16
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file1
+vfs_getattr called
+   unique: 3, error: -1 (Operation not permitted), outsize: 16
+unique: 4, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file2
+vfs_getattr called
+   unique: 4, error: -1 (Operation not permitted), outsize: 16
+unique: 5, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file3
+vfs_getattr called
+   unique: 5, error: -1 (Operation not permitted), outsize: 16
+unique: 6, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file4
+vfs_getattr called
+   unique: 6, error: -1 (Operation not permitted), outsize: 16
+unique: 7, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file5
+vfs_getattr called
+   unique: 7, error: -1 (Operation not permitted), outsize: 16
+unique: 8, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file6
+vfs_getattr called
+   unique: 8, error: -1 (Operation not permitted), outsize: 16
+unique: 9, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file7
+vfs_getattr called
+   unique: 9, error: -1 (Operation not permitted), outsize: 16
+unique: 10, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file8
+vfs_getattr called
+   unique: 10, error: -1 (Operation not permitted), outsize: 16
+unique: 11, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file9
+vfs_getattr called
+   unique: 11, error: -1 (Operation not permitted), outsize: 16
+unique: 12, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file10
+vfs_getattr called
+   unique: 12, error: -1 (Operation not permitted), outsize: 16
+unique: 13, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file11
+vfs_getattr called
+   unique: 13, error: -1 (Operation not permitted), outsize: 16
+unique: 14, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file12
+vfs_getattr called
+   unique: 14, error: -1 (Operation not permitted), outsize: 16
+unique: 15, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file13
+vfs_getattr called
+   unique: 15, error: -1 (Operation not permitted), outsize: 16
+unique: 16, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file14
+vfs_getattr called
+   unique: 16, error: -1 (Operation not permitted), outsize: 16
+unique: 17, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file15
+vfs_getattr called
+   unique: 17, error: -1 (Operation not permitted), outsize: 16
+unique: 18, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file16
+vfs_getattr called
+   unique: 18, error: -1 (Operation not permitted), outsize: 16
+unique: 19, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file17
+vfs_getattr called
+   unique: 19, error: -1 (Operation not permitted), outsize: 16
+unique: 20, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file18
+vfs_getattr called
+   unique: 20, error: -1 (Operation not permitted), outsize: 16
+unique: 21, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file19
+vfs_getattr called
+   unique: 21, error: -1 (Operation not permitted), outsize: 16
+unique: 22, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file20
+vfs_getattr called
+   unique: 22, error: -1 (Operation not permitted), outsize: 16
+unique: 23, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file21
+vfs_getattr called
+   unique: 23, error: -1 (Operation not permitted), outsize: 16
+unique: 24, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file22
+vfs_getattr called
+   unique: 24, error: -1 (Operation not permitted), outsize: 16
+unique: 25, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file23
+vfs_getattr called
+   unique: 25, error: -1 (Operation not permitted), outsize: 16
+unique: 26, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file24
+vfs_getattr called
+   unique: 26, error: -1 (Operation not permitted), outsize: 16
+unique: 27, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file25
+vfs_getattr called
+   unique: 27, error: -1 (Operation not permitted), outsize: 16
+unique: 28, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file26
+vfs_getattr called
+   unique: 28, error: -1 (Operation not permitted), outsize: 16
+unique: 29, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file27
+vfs_getattr called
+   unique: 29, error: -1 (Operation not permitted), outsize: 16
+unique: 30, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file28
+vfs_getattr called
+   unique: 30, error: -1 (Operation not permitted), outsize: 16
+unique: 31, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file29
+vfs_getattr called
+   unique: 31, error: -1 (Operation not permitted), outsize: 16
+unique: 32, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file30
+vfs_getattr called
+   unique: 32, error: -1 (Operation not permitted), outsize: 16
+unique: 33, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file31
+vfs_getattr called
+   unique: 33, error: -1 (Operation not permitted), outsize: 16
+unique: 34, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file32
+vfs_getattr called
+   unique: 34, error: -1 (Operation not permitted), outsize: 16
+unique: 35, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file33
+vfs_getattr called
+   unique: 35, error: -1 (Operation not permitted), outsize: 16
+unique: 36, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file34
+vfs_getattr called
+   unique: 36, error: -1 (Operation not permitted), outsize: 16
+unique: 37, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file35
+vfs_getattr called
+   unique: 37, error: -1 (Operation not permitted), outsize: 16
+unique: 38, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file36
+vfs_getattr called
+   unique: 38, error: -1 (Operation not permitted), outsize: 16
+unique: 39, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file37
+vfs_getattr called
+   unique: 39, error: -1 (Operation not permitted), outsize: 16
+unique: 40, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file38
+vfs_getattr called
+   unique: 40, error: -1 (Operation not permitted), outsize: 16
+unique: 41, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file39
+vfs_getattr called
+   unique: 41, error: -1 (Operation not permitted), outsize: 16
+unique: 42, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file40
+vfs_getattr called
+   unique: 42, error: -1 (Operation not permitted), outsize: 16
+unique: 43, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file41
+vfs_getattr called
+   unique: 43, error: -1 (Operation not permitted), outsize: 16
+unique: 44, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file42
+vfs_getattr called
+   unique: 44, error: -1 (Operation not permitted), outsize: 16
+unique: 45, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file43
+vfs_getattr called
+   unique: 45, error: -1 (Operation not permitted), outsize: 16
+unique: 46, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file44
+vfs_getattr called
+   unique: 46, error: -1 (Operation not permitted), outsize: 16
+unique: 47, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file45
+vfs_getattr called
+   unique: 47, error: -1 (Operation not permitted), outsize: 16
+unique: 48, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file46
+vfs_getattr called
+   unique: 48, error: -1 (Operation not permitted), outsize: 16
+unique: 49, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file47
+vfs_getattr called
+   unique: 49, error: -1 (Operation not permitted), outsize: 16
+unique: 50, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file48
+vfs_getattr called
+   unique: 50, error: -1 (Operation not permitted), outsize: 16
+unique: 51, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file49
+vfs_getattr called
+   unique: 51, error: -1 (Operation not permitted), outsize: 16
+unique: 52, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file50
+vfs_getattr called
+   unique: 52, error: -1 (Operation not permitted), outsize: 16
+unique: 53, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file51
+vfs_getattr called
+   unique: 53, error: -1 (Operation not permitted), outsize: 16
+unique: 54, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file52
+vfs_getattr called
+   unique: 54, error: -1 (Operation not permitted), outsize: 16
+unique: 55, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file53
+vfs_getattr called
+   unique: 55, error: -1 (Operation not permitted), outsize: 16
+unique: 56, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file54
+vfs_getattr called
+   unique: 56, error: -1 (Operation not permitted), outsize: 16
+unique: 57, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file55
+vfs_getattr called
+   unique: 57, error: -1 (Operation not permitted), outsize: 16
+unique: 58, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file56
+vfs_getattr called
+   unique: 58, error: -1 (Operation not permitted), outsize: 16
+unique: 59, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file57
+vfs_getattr called
+   unique: 59, error: -1 (Operation not permitted), outsize: 16
+unique: 60, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file58
+vfs_getattr called
+   unique: 60, error: -1 (Operation not permitted), outsize: 16
+unique: 61, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file59
+vfs_getattr called
+   unique: 61, error: -1 (Operation not permitted), outsize: 16
+unique: 62, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file60
+vfs_getattr called
+   unique: 62, error: -1 (Operation not permitted), outsize: 16
+unique: 63, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file61
+vfs_getattr called
+   unique: 63, error: -1 (Operation not permitted), outsize: 16
+unique: 64, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file62
+vfs_getattr called
+   unique: 64, error: -1 (Operation not permitted), outsize: 16
+unique: 65, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file63
+vfs_getattr called
+   unique: 65, error: -1 (Operation not permitted), outsize: 16
+unique: 66, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file64
+vfs_getattr called
+   unique: 66, error: -1 (Operation not permitted), outsize: 16
+unique: 67, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file65
+vfs_getattr called
+   unique: 67, error: -1 (Operation not permitted), outsize: 16
+unique: 68, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file66
+vfs_getattr called
+   unique: 68, error: -1 (Operation not permitted), outsize: 16
+unique: 69, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file67
+vfs_getattr called
+   unique: 69, error: -1 (Operation not permitted), outsize: 16
+unique: 70, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file68
+vfs_getattr called
+   unique: 70, error: -1 (Operation not permitted), outsize: 16
+unique: 71, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file69
+vfs_getattr called
+   unique: 71, error: -1 (Operation not permitted), outsize: 16
+unique: 72, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file70
+vfs_getattr called
+   unique: 72, error: -1 (Operation not permitted), outsize: 16
+unique: 73, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file71
+vfs_getattr called
+   unique: 73, error: -1 (Operation not permitted), outsize: 16
+unique: 74, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file72
+vfs_getattr called
+   unique: 74, error: -1 (Operation not permitted), outsize: 16
+unique: 75, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file73
+vfs_getattr called
+   unique: 75, error: -1 (Operation not permitted), outsize: 16
+unique: 76, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file74
+vfs_getattr called
+   unique: 76, error: -1 (Operation not permitted), outsize: 16
+unique: 77, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file75
+vfs_getattr called
+   unique: 77, error: -1 (Operation not permitted), outsize: 16
+unique: 78, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file76
+vfs_getattr called
+   unique: 78, error: -1 (Operation not permitted), outsize: 16
+unique: 79, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file77
+vfs_getattr called
+   unique: 79, error: -1 (Operation not permitted), outsize: 16
+unique: 80, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file78
+vfs_getattr called
+   unique: 80, error: -1 (Operation not permitted), outsize: 16
+unique: 81, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file79
+vfs_getattr called
+   unique: 81, error: -1 (Operation not permitted), outsize: 16
+unique: 82, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file80
+vfs_getattr called
+   unique: 82, error: -1 (Operation not permitted), outsize: 16
+unique: 83, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file81
+vfs_getattr called
+   unique: 83, error: -1 (Operation not permitted), outsize: 16
+unique: 84, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file82
+vfs_getattr called
+   unique: 84, error: -1 (Operation not permitted), outsize: 16
+unique: 85, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file83
+vfs_getattr called
+   unique: 85, error: -1 (Operation not permitted), outsize: 16
+unique: 86, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file84
+vfs_getattr called
+   unique: 86, error: -1 (Operation not permitted), outsize: 16
+unique: 87, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file85
+vfs_getattr called
+   unique: 87, error: -1 (Operation not permitted), outsize: 16
+unique: 88, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file86
+vfs_getattr called
+   unique: 88, error: -1 (Operation not permitted), outsize: 16
+unique: 89, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file87
+vfs_getattr called
+   unique: 89, error: -1 (Operation not permitted), outsize: 16
+unique: 90, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file88
+vfs_getattr called
+   unique: 90, error: -1 (Operation not permitted), outsize: 16
+unique: 91, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file89
+vfs_getattr called
+   unique: 91, error: -1 (Operation not permitted), outsize: 16
+unique: 92, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file90
+vfs_getattr called
+   unique: 92, error: -1 (Operation not permitted), outsize: 16
+unique: 93, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file91
+vfs_getattr called
+   unique: 93, error: -1 (Operation not permitted), outsize: 16
+unique: 94, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file92
+vfs_getattr called
+   unique: 94, error: -1 (Operation not permitted), outsize: 16
+unique: 95, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file93
+vfs_getattr called
+   unique: 95, error: -1 (Operation not permitted), outsize: 16
+unique: 96, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file94
+vfs_getattr called
+   unique: 96, error: -1 (Operation not permitted), outsize: 16
+unique: 97, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file95
+vfs_getattr called
+   unique: 97, error: -1 (Operation not permitted), outsize: 16
+unique: 98, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file96
+vfs_getattr called
+   unique: 98, error: -1 (Operation not permitted), outsize: 16
+unique: 99, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file97
+vfs_getattr called
+   unique: 99, error: -1 (Operation not permitted), outsize: 16
+unique: 100, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file98
+vfs_getattr called
+   unique: 100, error: -1 (Operation not permitted), outsize: 16
+unique: 101, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file99
+vfs_getattr called
+   unique: 101, error: -1 (Operation not permitted), outsize: 16
+vfs_unmount called
+Disk usage: 102 reads, 1 writes
+RUNNING './3600fs -s -d /tmp/3600fs.fyWC73'
+unique: 1, opcode: INIT (26), nodeid: 0, insize: 56
+INIT: 7.12
+flags=0x0000007b
+max_readahead=0x00020000
+vfs_mount called
+Invalid disk: Disk did not unmount correctly.   INIT: 7.8
+   flags=0x00000001
+   max_readahead=0x00020000
+   max_write=0x00020000
+   unique: 1, error: 0 (Success), outsize: 40
+unique: 2, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test1.txt
+vfs_getattr called
+   unique: 2, error: -1 (Operation not permitted), outsize: 16
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test2.txt
+vfs_getattr called
+   unique: 3, error: -1 (Operation not permitted), outsize: 16
+unique: 4, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test2.txt
+vfs_getattr called
+   unique: 4, error: -1 (Operation not permitted), outsize: 16
+unique: 5, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 5, error: -1 (Operation not permitted), outsize: 16
+unique: 6, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test1.txt
+vfs_getattr called
+   unique: 6, error: -1 (Operation not permitted), outsize: 16
+unique: 7, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 7, error: -1 (Operation not permitted), outsize: 16
+unique: 8, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test4.txt
+vfs_getattr called
+   unique: 8, error: -1 (Operation not permitted), outsize: 16
+unique: 9, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test4.txt
+vfs_getattr called
+   unique: 9, error: -1 (Operation not permitted), outsize: 16
+unique: 10, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 10, error: -1 (Operation not permitted), outsize: 16
+unique: 11, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test1.txt
+vfs_getattr called
+   unique: 11, error: -1 (Operation not permitted), outsize: 16
+unique: 12, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test2.txt
+vfs_getattr called
+   unique: 12, error: -1 (Operation not permitted), outsize: 16
+unique: 13, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test2.txt
+vfs_getattr called
+   unique: 13, error: -1 (Operation not permitted), outsize: 16
+unique: 14, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 14, error: -1 (Operation not permitted), outsize: 16
+unique: 15, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test1.txt
+vfs_getattr called
+   unique: 15, error: -1 (Operation not permitted), outsize: 16
+unique: 16, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 16, error: -1 (Operation not permitted), outsize: 16
+unique: 17, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test4.txt
+vfs_getattr called
+   unique: 17, error: -1 (Operation not permitted), outsize: 16
+unique: 18, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test4.txt
+vfs_getattr called
+   unique: 18, error: -1 (Operation not permitted), outsize: 16
+unique: 19, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 19, error: -1 (Operation not permitted), outsize: 16
+unique: 20, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test1.txt
+vfs_getattr called
+   unique: 20, error: -1 (Operation not permitted), outsize: 16
+unique: 21, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test2.txt
+vfs_getattr called
+   unique: 21, error: -1 (Operation not permitted), outsize: 16
+unique: 22, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test2.txt
+vfs_getattr called
+   unique: 22, error: -1 (Operation not permitted), outsize: 16
+unique: 23, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 23, error: -1 (Operation not permitted), outsize: 16
+unique: 24, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test1.txt
+vfs_getattr called
+   unique: 24, error: -1 (Operation not permitted), outsize: 16
+unique: 25, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 25, error: -1 (Operation not permitted), outsize: 16
+unique: 26, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test4.txt
+vfs_getattr called
+   unique: 26, error: -1 (Operation not permitted), outsize: 16
+unique: 27, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test4.txt
+vfs_getattr called
+   unique: 27, error: -1 (Operation not permitted), outsize: 16
+unique: 28, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 28, error: -1 (Operation not permitted), outsize: 16
+unique: 29, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test1.txt
+vfs_getattr called
+   unique: 29, error: -1 (Operation not permitted), outsize: 16
+unique: 30, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test1.txt
+vfs_getattr called
+   unique: 30, error: -1 (Operation not permitted), outsize: 16
+unique: 31, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test2.txt
+vfs_getattr called
+   unique: 31, error: -1 (Operation not permitted), outsize: 16
+unique: 32, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 32, error: -1 (Operation not permitted), outsize: 16
+unique: 33, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test4.txt
+vfs_getattr called
+   unique: 33, error: -1 (Operation not permitted), outsize: 16
+vfs_unmount called
+Disk usage: 34 reads, 1 writes
+RUNNING './3600fs -s -d /tmp/3600fs.fyWC73'
+unique: 1, opcode: INIT (26), nodeid: 0, insize: 56
+INIT: 7.12
+flags=0x0000007b
+max_readahead=0x00020000
+vfs_mount called
+Invalid disk: Disk did not unmount correctly.   INIT: 7.8
+   flags=0x00000001
+   max_readahead=0x00020000
+   max_write=0x00020000
+   unique: 1, error: 0 (Success), outsize: 40
+unique: 2, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test1.txt
+vfs_getattr called
+   unique: 2, error: -1 (Operation not permitted), outsize: 16
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test2.txt
+vfs_getattr called
+   unique: 3, error: -1 (Operation not permitted), outsize: 16
+unique: 4, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 4, error: -1 (Operation not permitted), outsize: 16
+unique: 5, opcode: OPENDIR (27), nodeid: 1, insize: 48
+   unique: 5, error: 0 (Success), outsize: 32
+unique: 6, opcode: READDIR (28), nodeid: 1, insize: 80
+   unique: 6, error: 0 (Success), outsize: 16
+vfs_unmount called
+Disk usage: 5 reads, 1 writes
+RUNNING './3600fs -s -d /tmp/3600fs.fyWC73'
+unique: 1, opcode: INIT (26), nodeid: 0, insize: 56
+INIT: 7.12
+flags=0x0000007b
+max_readahead=0x00020000
+vfs_mount called
+Invalid disk: Disk did not unmount correctly.   INIT: 7.8
+   flags=0x00000001
+   max_readahead=0x00020000
+   max_write=0x00020000
+   unique: 1, error: 0 (Success), outsize: 40
+unique: 2, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 2, error: -1 (Operation not permitted), outsize: 16
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 3, error: -1 (Operation not permitted), outsize: 16
+unique: 4, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 4, error: -1 (Operation not permitted), outsize: 16
+unique: 5, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 5, error: -1 (Operation not permitted), outsize: 16
+unique: 6, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 6, error: -1 (Operation not permitted), outsize: 16
+unique: 7, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 7, error: -1 (Operation not permitted), outsize: 16
+unique: 8, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test4.txt
+vfs_getattr called
+   unique: 8, error: -1 (Operation not permitted), outsize: 16
+unique: 9, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test4.txt
+vfs_getattr called
+   unique: 9, error: -1 (Operation not permitted), outsize: 16
+unique: 10, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test4.txt
+vfs_getattr called
+   unique: 10, error: -1 (Operation not permitted), outsize: 16
+unique: 11, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test4.txt
+vfs_getattr called
+   unique: 11, error: -1 (Operation not permitted), outsize: 16
+unique: 12, opcode: LOOKUP (1), nodeid: 1, insize: 69
+LOOKUP /abcdefghijklmnopqrstuvwxyzab
+vfs_getattr called
+   unique: 12, error: -1 (Operation not permitted), outsize: 16
+unique: 13, opcode: LOOKUP (1), nodeid: 1, insize: 69
+LOOKUP /abcdefghijklmnopqrstuvwxyzab
+vfs_getattr called
+   unique: 13, error: -1 (Operation not permitted), outsize: 16
+unique: 14, opcode: LOOKUP (1), nodeid: 1, insize: 69
+LOOKUP /abcdefghijklmnopqrstuvwxyzab
+vfs_getattr called
+   unique: 14, error: -1 (Operation not permitted), outsize: 16
+unique: 15, opcode: LOOKUP (1), nodeid: 1, insize: 69
+LOOKUP /abcdefghijklmnopqrstuvwxyzab
+vfs_getattr called
+   unique: 15, error: -1 (Operation not permitted), outsize: 16
+unique: 16, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test4.txt
+vfs_getattr called
+   unique: 16, error: -1 (Operation not permitted), outsize: 16
+unique: 17, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test4.txt
+vfs_getattr called
+   unique: 17, error: -1 (Operation not permitted), outsize: 16
+vfs_unmount called
+Disk usage: 18 reads, 1 writes
+RUNNING './3600fs -s -d /tmp/3600fs.fyWC73'
+unique: 1, opcode: INIT (26), nodeid: 0, insize: 56
+INIT: 7.12
+flags=0x0000007b
+max_readahead=0x00020000
+vfs_mount called
+Invalid disk: Disk did not unmount correctly.   INIT: 7.8
+   flags=0x00000001
+   max_readahead=0x00020000
+   max_write=0x00020000
+   unique: 1, error: 0 (Success), outsize: 40
+unique: 2, opcode: LOOKUP (1), nodeid: 1, insize: 45
+LOOKUP /test
+vfs_getattr called
+   unique: 2, error: -1 (Operation not permitted), outsize: 16
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 45
+LOOKUP /test
+vfs_getattr called
+   unique: 3, error: -1 (Operation not permitted), outsize: 16
+unique: 4, opcode: LOOKUP (1), nodeid: 1, insize: 45
+LOOKUP /test
+vfs_getattr called
+   unique: 4, error: -1 (Operation not permitted), outsize: 16
+unique: 5, opcode: LOOKUP (1), nodeid: 1, insize: 45
+LOOKUP /test
+vfs_getattr called
+   unique: 5, error: -1 (Operation not permitted), outsize: 16
+vfs_unmount called
+Disk usage: 6 reads, 1 writes
+RUNNING './3600fs -s -d /tmp/3600fs.IQPCbe'
+unique: 1, opcode: INIT (26), nodeid: 0, insize: 56
+INIT: 7.12
+flags=0x0000007b
+max_readahead=0x00020000
+vfs_mount called
+   INIT: 7.8
+   flags=0x00000001
+   max_readahead=0x00020000
+   max_write=0x00020000
+   unique: 1, error: 0 (Success), outsize: 40
+unique: 2, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test1.txt
+vfs_getattr called
+   unique: 2, error: -1 (Operation not permitted), outsize: 16
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test1.txt
+vfs_getattr called
+   unique: 3, error: -1 (Operation not permitted), outsize: 16
+unique: 4, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test2.txt
+vfs_getattr called
+   unique: 4, error: -1 (Operation not permitted), outsize: 16
+unique: 5, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test2.txt
+vfs_getattr called
+   unique: 5, error: -1 (Operation not permitted), outsize: 16
+unique: 6, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 6, error: -1 (Operation not permitted), outsize: 16
+unique: 7, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 7, error: -1 (Operation not permitted), outsize: 16
+unique: 8, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test2.txt
+vfs_getattr called
+   unique: 8, error: -1 (Operation not permitted), outsize: 16
+vfs_unmount called
+Disk usage: 9 reads, 2 writes
+RUNNING './3600fs -s -d /tmp/3600fs.IQPCbe'
+unique: 1, opcode: INIT (26), nodeid: 0, insize: 56
+INIT: 7.12
+flags=0x0000007b
+max_readahead=0x00020000
+vfs_mount called
+   INIT: 7.8
+   flags=0x00000001
+   max_readahead=0x00020000
+   max_write=0x00020000
+   unique: 1, error: 0 (Success), outsize: 40
+unique: 2, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test1.txt
+vfs_getattr called
+   unique: 2, error: -1 (Operation not permitted), outsize: 16
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 3, error: -1 (Operation not permitted), outsize: 16
+vfs_unmount called
+Disk usage: 4 reads, 2 writes
+RUNNING './3600fs -s -d /tmp/3600fs.IQPCbe'
+unique: 1, opcode: INIT (26), nodeid: 0, insize: 56
+INIT: 7.12
+flags=0x0000007b
+max_readahead=0x00020000
+vfs_mount called
+   INIT: 7.8
+   flags=0x00000001
+   max_readahead=0x00020000
+   max_write=0x00020000
+   unique: 1, error: 0 (Success), outsize: 40
+unique: 2, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file0
+vfs_getattr called
+   unique: 2, error: -1 (Operation not permitted), outsize: 16
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file1
+vfs_getattr called
+   unique: 3, error: -1 (Operation not permitted), outsize: 16
+unique: 4, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file2
+vfs_getattr called
+   unique: 4, error: -1 (Operation not permitted), outsize: 16
+unique: 5, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file3
+vfs_getattr called
+   unique: 5, error: -1 (Operation not permitted), outsize: 16
+unique: 6, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file4
+vfs_getattr called
+   unique: 6, error: -1 (Operation not permitted), outsize: 16
+unique: 7, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file5
+vfs_getattr called
+   unique: 7, error: -1 (Operation not permitted), outsize: 16
+unique: 8, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file6
+vfs_getattr called
+   unique: 8, error: -1 (Operation not permitted), outsize: 16
+unique: 9, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file7
+vfs_getattr called
+   unique: 9, error: -1 (Operation not permitted), outsize: 16
+unique: 10, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file8
+vfs_getattr called
+   unique: 10, error: -1 (Operation not permitted), outsize: 16
+unique: 11, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file9
+vfs_getattr called
+   unique: 11, error: -1 (Operation not permitted), outsize: 16
+unique: 12, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file10
+vfs_getattr called
+   unique: 12, error: -1 (Operation not permitted), outsize: 16
+unique: 13, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file11
+vfs_getattr called
+   unique: 13, error: -1 (Operation not permitted), outsize: 16
+unique: 14, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file12
+vfs_getattr called
+   unique: 14, error: -1 (Operation not permitted), outsize: 16
+unique: 15, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file13
+vfs_getattr called
+   unique: 15, error: -1 (Operation not permitted), outsize: 16
+unique: 16, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file14
+vfs_getattr called
+   unique: 16, error: -1 (Operation not permitted), outsize: 16
+unique: 17, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file15
+vfs_getattr called
+   unique: 17, error: -1 (Operation not permitted), outsize: 16
+unique: 18, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file16
+vfs_getattr called
+   unique: 18, error: -1 (Operation not permitted), outsize: 16
+unique: 19, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file17
+vfs_getattr called
+   unique: 19, error: -1 (Operation not permitted), outsize: 16
+unique: 20, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file18
+vfs_getattr called
+   unique: 20, error: -1 (Operation not permitted), outsize: 16
+unique: 21, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file19
+vfs_getattr called
+   unique: 21, error: -1 (Operation not permitted), outsize: 16
+unique: 22, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file20
+vfs_getattr called
+   unique: 22, error: -1 (Operation not permitted), outsize: 16
+unique: 23, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file21
+vfs_getattr called
+   unique: 23, error: -1 (Operation not permitted), outsize: 16
+unique: 24, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file22
+vfs_getattr called
+   unique: 24, error: -1 (Operation not permitted), outsize: 16
+unique: 25, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file23
+vfs_getattr called
+   unique: 25, error: -1 (Operation not permitted), outsize: 16
+unique: 26, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file24
+vfs_getattr called
+   unique: 26, error: -1 (Operation not permitted), outsize: 16
+unique: 27, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file25
+vfs_getattr called
+   unique: 27, error: -1 (Operation not permitted), outsize: 16
+unique: 28, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file26
+vfs_getattr called
+   unique: 28, error: -1 (Operation not permitted), outsize: 16
+unique: 29, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file27
+vfs_getattr called
+   unique: 29, error: -1 (Operation not permitted), outsize: 16
+unique: 30, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file28
+vfs_getattr called
+   unique: 30, error: -1 (Operation not permitted), outsize: 16
+unique: 31, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file29
+vfs_getattr called
+   unique: 31, error: -1 (Operation not permitted), outsize: 16
+unique: 32, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file30
+vfs_getattr called
+   unique: 32, error: -1 (Operation not permitted), outsize: 16
+unique: 33, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file31
+vfs_getattr called
+   unique: 33, error: -1 (Operation not permitted), outsize: 16
+unique: 34, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file32
+vfs_getattr called
+   unique: 34, error: -1 (Operation not permitted), outsize: 16
+unique: 35, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file33
+vfs_getattr called
+   unique: 35, error: -1 (Operation not permitted), outsize: 16
+unique: 36, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file34
+vfs_getattr called
+   unique: 36, error: -1 (Operation not permitted), outsize: 16
+unique: 37, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file35
+vfs_getattr called
+   unique: 37, error: -1 (Operation not permitted), outsize: 16
+unique: 38, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file36
+vfs_getattr called
+   unique: 38, error: -1 (Operation not permitted), outsize: 16
+unique: 39, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file37
+vfs_getattr called
+   unique: 39, error: -1 (Operation not permitted), outsize: 16
+unique: 40, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file38
+vfs_getattr called
+   unique: 40, error: -1 (Operation not permitted), outsize: 16
+unique: 41, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file39
+vfs_getattr called
+   unique: 41, error: -1 (Operation not permitted), outsize: 16
+unique: 42, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file40
+vfs_getattr called
+   unique: 42, error: -1 (Operation not permitted), outsize: 16
+unique: 43, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file41
+vfs_getattr called
+   unique: 43, error: -1 (Operation not permitted), outsize: 16
+unique: 44, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file42
+vfs_getattr called
+   unique: 44, error: -1 (Operation not permitted), outsize: 16
+unique: 45, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file43
+vfs_getattr called
+   unique: 45, error: -1 (Operation not permitted), outsize: 16
+unique: 46, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file44
+vfs_getattr called
+   unique: 46, error: -1 (Operation not permitted), outsize: 16
+unique: 47, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file45
+vfs_getattr called
+   unique: 47, error: -1 (Operation not permitted), outsize: 16
+unique: 48, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file46
+vfs_getattr called
+   unique: 48, error: -1 (Operation not permitted), outsize: 16
+unique: 49, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file47
+vfs_getattr called
+   unique: 49, error: -1 (Operation not permitted), outsize: 16
+unique: 50, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file48
+vfs_getattr called
+   unique: 50, error: -1 (Operation not permitted), outsize: 16
+unique: 51, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file49
+vfs_getattr called
+   unique: 51, error: -1 (Operation not permitted), outsize: 16
+unique: 52, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file50
+vfs_getattr called
+   unique: 52, error: -1 (Operation not permitted), outsize: 16
+unique: 53, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file51
+vfs_getattr called
+   unique: 53, error: -1 (Operation not permitted), outsize: 16
+unique: 54, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file52
+vfs_getattr called
+   unique: 54, error: -1 (Operation not permitted), outsize: 16
+unique: 55, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file53
+vfs_getattr called
+   unique: 55, error: -1 (Operation not permitted), outsize: 16
+unique: 56, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file54
+vfs_getattr called
+   unique: 56, error: -1 (Operation not permitted), outsize: 16
+unique: 57, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file55
+vfs_getattr called
+   unique: 57, error: -1 (Operation not permitted), outsize: 16
+unique: 58, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file56
+vfs_getattr called
+   unique: 58, error: -1 (Operation not permitted), outsize: 16
+unique: 59, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file57
+vfs_getattr called
+   unique: 59, error: -1 (Operation not permitted), outsize: 16
+unique: 60, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file58
+vfs_getattr called
+   unique: 60, error: -1 (Operation not permitted), outsize: 16
+unique: 61, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file59
+vfs_getattr called
+   unique: 61, error: -1 (Operation not permitted), outsize: 16
+unique: 62, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file60
+vfs_getattr called
+   unique: 62, error: -1 (Operation not permitted), outsize: 16
+unique: 63, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file61
+vfs_getattr called
+   unique: 63, error: -1 (Operation not permitted), outsize: 16
+unique: 64, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file62
+vfs_getattr called
+   unique: 64, error: -1 (Operation not permitted), outsize: 16
+unique: 65, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file63
+vfs_getattr called
+   unique: 65, error: -1 (Operation not permitted), outsize: 16
+unique: 66, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file64
+vfs_getattr called
+   unique: 66, error: -1 (Operation not permitted), outsize: 16
+unique: 67, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file65
+vfs_getattr called
+   unique: 67, error: -1 (Operation not permitted), outsize: 16
+unique: 68, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file66
+vfs_getattr called
+   unique: 68, error: -1 (Operation not permitted), outsize: 16
+unique: 69, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file67
+vfs_getattr called
+   unique: 69, error: -1 (Operation not permitted), outsize: 16
+unique: 70, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file68
+vfs_getattr called
+   unique: 70, error: -1 (Operation not permitted), outsize: 16
+unique: 71, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file69
+vfs_getattr called
+   unique: 71, error: -1 (Operation not permitted), outsize: 16
+unique: 72, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file70
+vfs_getattr called
+   unique: 72, error: -1 (Operation not permitted), outsize: 16
+unique: 73, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file71
+vfs_getattr called
+   unique: 73, error: -1 (Operation not permitted), outsize: 16
+unique: 74, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file72
+vfs_getattr called
+   unique: 74, error: -1 (Operation not permitted), outsize: 16
+unique: 75, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file73
+vfs_getattr called
+   unique: 75, error: -1 (Operation not permitted), outsize: 16
+unique: 76, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file74
+vfs_getattr called
+   unique: 76, error: -1 (Operation not permitted), outsize: 16
+unique: 77, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file75
+vfs_getattr called
+   unique: 77, error: -1 (Operation not permitted), outsize: 16
+unique: 78, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file76
+vfs_getattr called
+   unique: 78, error: -1 (Operation not permitted), outsize: 16
+unique: 79, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file77
+vfs_getattr called
+   unique: 79, error: -1 (Operation not permitted), outsize: 16
+unique: 80, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file78
+vfs_getattr called
+   unique: 80, error: -1 (Operation not permitted), outsize: 16
+unique: 81, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file79
+vfs_getattr called
+   unique: 81, error: -1 (Operation not permitted), outsize: 16
+unique: 82, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file80
+vfs_getattr called
+   unique: 82, error: -1 (Operation not permitted), outsize: 16
+unique: 83, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file81
+vfs_getattr called
+   unique: 83, error: -1 (Operation not permitted), outsize: 16
+unique: 84, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file82
+vfs_getattr called
+   unique: 84, error: -1 (Operation not permitted), outsize: 16
+unique: 85, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file83
+vfs_getattr called
+   unique: 85, error: -1 (Operation not permitted), outsize: 16
+unique: 86, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file84
+vfs_getattr called
+   unique: 86, error: -1 (Operation not permitted), outsize: 16
+unique: 87, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file85
+vfs_getattr called
+   unique: 87, error: -1 (Operation not permitted), outsize: 16
+unique: 88, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file86
+vfs_getattr called
+   unique: 88, error: -1 (Operation not permitted), outsize: 16
+unique: 89, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file87
+vfs_getattr called
+   unique: 89, error: -1 (Operation not permitted), outsize: 16
+unique: 90, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file88
+vfs_getattr called
+   unique: 90, error: -1 (Operation not permitted), outsize: 16
+unique: 91, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file89
+vfs_getattr called
+   unique: 91, error: -1 (Operation not permitted), outsize: 16
+unique: 92, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file90
+vfs_getattr called
+   unique: 92, error: -1 (Operation not permitted), outsize: 16
+unique: 93, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file91
+vfs_getattr called
+   unique: 93, error: -1 (Operation not permitted), outsize: 16
+unique: 94, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file92
+vfs_getattr called
+   unique: 94, error: -1 (Operation not permitted), outsize: 16
+unique: 95, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file93
+vfs_getattr called
+   unique: 95, error: -1 (Operation not permitted), outsize: 16
+unique: 96, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file94
+vfs_getattr called
+   unique: 96, error: -1 (Operation not permitted), outsize: 16
+unique: 97, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file95
+vfs_getattr called
+   unique: 97, error: -1 (Operation not permitted), outsize: 16
+unique: 98, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file96
+vfs_getattr called
+   unique: 98, error: -1 (Operation not permitted), outsize: 16
+unique: 99, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file97
+vfs_getattr called
+   unique: 99, error: -1 (Operation not permitted), outsize: 16
+unique: 100, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file98
+vfs_getattr called
+   unique: 100, error: -1 (Operation not permitted), outsize: 16
+unique: 101, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file99
+vfs_getattr called
+   unique: 101, error: -1 (Operation not permitted), outsize: 16
+unique: 102, opcode: OPENDIR (27), nodeid: 1, insize: 48
+   unique: 102, error: 0 (Success), outsize: 32
+unique: 103, opcode: READDIR (28), nodeid: 1, insize: 80
+   unique: 103, error: 0 (Success), outsize: 16
+unique: 104, opcode: RELEASEDIR (29), nodeid: 1, insize: 64
+   unique: 104, error: 0 (Success), outsize: 16
+unique: 105, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file0
+vfs_getattr called
+   unique: 105, error: -1 (Operation not permitted), outsize: 16
+vfs_unmount called
+Disk usage: 103 reads, 2 writes
+RUNNING './3600fs -s -d /tmp/3600fs.IQPCbe'
+unique: 1, opcode: INIT (26), nodeid: 0, insize: 56
+INIT: 7.12
+flags=0x0000007b
+max_readahead=0x00020000
+vfs_mount called
+   INIT: 7.8
+   flags=0x00000001
+   max_readahead=0x00020000
+   max_write=0x00020000
+   unique: 1, error: 0 (Success), outsize: 40
+unique: 2, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file0
+vfs_getattr called
+   unique: 2, error: -1 (Operation not permitted), outsize: 16
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file1
+vfs_getattr called
+   unique: 3, error: -1 (Operation not permitted), outsize: 16
+unique: 4, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file2
+vfs_getattr called
+   unique: 4, error: -1 (Operation not permitted), outsize: 16
+unique: 5, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file3
+vfs_getattr called
+   unique: 5, error: -1 (Operation not permitted), outsize: 16
+unique: 6, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file4
+vfs_getattr called
+   unique: 6, error: -1 (Operation not permitted), outsize: 16
+unique: 7, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file5
+vfs_getattr called
+   unique: 7, error: -1 (Operation not permitted), outsize: 16
+unique: 8, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file6
+vfs_getattr called
+   unique: 8, error: -1 (Operation not permitted), outsize: 16
+unique: 9, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file7
+vfs_getattr called
+   unique: 9, error: -1 (Operation not permitted), outsize: 16
+unique: 10, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file8
+vfs_getattr called
+   unique: 10, error: -1 (Operation not permitted), outsize: 16
+unique: 11, opcode: LOOKUP (1), nodeid: 1, insize: 46
+LOOKUP /file9
+vfs_getattr called
+   unique: 11, error: -1 (Operation not permitted), outsize: 16
+unique: 12, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file10
+vfs_getattr called
+   unique: 12, error: -1 (Operation not permitted), outsize: 16
+unique: 13, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file11
+vfs_getattr called
+   unique: 13, error: -1 (Operation not permitted), outsize: 16
+unique: 14, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file12
+vfs_getattr called
+   unique: 14, error: -1 (Operation not permitted), outsize: 16
+unique: 15, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file13
+vfs_getattr called
+   unique: 15, error: -1 (Operation not permitted), outsize: 16
+unique: 16, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file14
+vfs_getattr called
+   unique: 16, error: -1 (Operation not permitted), outsize: 16
+unique: 17, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file15
+vfs_getattr called
+   unique: 17, error: -1 (Operation not permitted), outsize: 16
+unique: 18, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file16
+vfs_getattr called
+   unique: 18, error: -1 (Operation not permitted), outsize: 16
+unique: 19, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file17
+vfs_getattr called
+   unique: 19, error: -1 (Operation not permitted), outsize: 16
+unique: 20, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file18
+vfs_getattr called
+   unique: 20, error: -1 (Operation not permitted), outsize: 16
+unique: 21, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file19
+vfs_getattr called
+   unique: 21, error: -1 (Operation not permitted), outsize: 16
+unique: 22, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file20
+vfs_getattr called
+   unique: 22, error: -1 (Operation not permitted), outsize: 16
+unique: 23, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file21
+vfs_getattr called
+   unique: 23, error: -1 (Operation not permitted), outsize: 16
+unique: 24, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file22
+vfs_getattr called
+   unique: 24, error: -1 (Operation not permitted), outsize: 16
+unique: 25, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file23
+vfs_getattr called
+   unique: 25, error: -1 (Operation not permitted), outsize: 16
+unique: 26, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file24
+vfs_getattr called
+   unique: 26, error: -1 (Operation not permitted), outsize: 16
+unique: 27, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file25
+vfs_getattr called
+   unique: 27, error: -1 (Operation not permitted), outsize: 16
+unique: 28, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file26
+vfs_getattr called
+   unique: 28, error: -1 (Operation not permitted), outsize: 16
+unique: 29, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file27
+vfs_getattr called
+   unique: 29, error: -1 (Operation not permitted), outsize: 16
+unique: 30, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file28
+vfs_getattr called
+   unique: 30, error: -1 (Operation not permitted), outsize: 16
+unique: 31, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file29
+vfs_getattr called
+   unique: 31, error: -1 (Operation not permitted), outsize: 16
+unique: 32, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file30
+vfs_getattr called
+   unique: 32, error: -1 (Operation not permitted), outsize: 16
+unique: 33, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file31
+vfs_getattr called
+   unique: 33, error: -1 (Operation not permitted), outsize: 16
+unique: 34, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file32
+vfs_getattr called
+   unique: 34, error: -1 (Operation not permitted), outsize: 16
+unique: 35, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file33
+vfs_getattr called
+   unique: 35, error: -1 (Operation not permitted), outsize: 16
+unique: 36, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file34
+vfs_getattr called
+   unique: 36, error: -1 (Operation not permitted), outsize: 16
+unique: 37, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file35
+vfs_getattr called
+   unique: 37, error: -1 (Operation not permitted), outsize: 16
+unique: 38, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file36
+vfs_getattr called
+   unique: 38, error: -1 (Operation not permitted), outsize: 16
+unique: 39, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file37
+vfs_getattr called
+   unique: 39, error: -1 (Operation not permitted), outsize: 16
+unique: 40, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file38
+vfs_getattr called
+   unique: 40, error: -1 (Operation not permitted), outsize: 16
+unique: 41, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file39
+vfs_getattr called
+   unique: 41, error: -1 (Operation not permitted), outsize: 16
+unique: 42, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file40
+vfs_getattr called
+   unique: 42, error: -1 (Operation not permitted), outsize: 16
+unique: 43, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file41
+vfs_getattr called
+   unique: 43, error: -1 (Operation not permitted), outsize: 16
+unique: 44, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file42
+vfs_getattr called
+   unique: 44, error: -1 (Operation not permitted), outsize: 16
+unique: 45, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file43
+vfs_getattr called
+   unique: 45, error: -1 (Operation not permitted), outsize: 16
+unique: 46, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file44
+vfs_getattr called
+   unique: 46, error: -1 (Operation not permitted), outsize: 16
+unique: 47, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file45
+vfs_getattr called
+   unique: 47, error: -1 (Operation not permitted), outsize: 16
+unique: 48, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file46
+vfs_getattr called
+   unique: 48, error: -1 (Operation not permitted), outsize: 16
+unique: 49, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file47
+vfs_getattr called
+   unique: 49, error: -1 (Operation not permitted), outsize: 16
+unique: 50, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file48
+vfs_getattr called
+   unique: 50, error: -1 (Operation not permitted), outsize: 16
+unique: 51, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file49
+vfs_getattr called
+   unique: 51, error: -1 (Operation not permitted), outsize: 16
+unique: 52, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file50
+vfs_getattr called
+   unique: 52, error: -1 (Operation not permitted), outsize: 16
+unique: 53, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file51
+vfs_getattr called
+   unique: 53, error: -1 (Operation not permitted), outsize: 16
+unique: 54, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file52
+vfs_getattr called
+   unique: 54, error: -1 (Operation not permitted), outsize: 16
+unique: 55, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file53
+vfs_getattr called
+   unique: 55, error: -1 (Operation not permitted), outsize: 16
+unique: 56, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file54
+vfs_getattr called
+   unique: 56, error: -1 (Operation not permitted), outsize: 16
+unique: 57, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file55
+vfs_getattr called
+   unique: 57, error: -1 (Operation not permitted), outsize: 16
+unique: 58, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file56
+vfs_getattr called
+   unique: 58, error: -1 (Operation not permitted), outsize: 16
+unique: 59, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file57
+vfs_getattr called
+   unique: 59, error: -1 (Operation not permitted), outsize: 16
+unique: 60, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file58
+vfs_getattr called
+   unique: 60, error: -1 (Operation not permitted), outsize: 16
+unique: 61, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file59
+vfs_getattr called
+   unique: 61, error: -1 (Operation not permitted), outsize: 16
+unique: 62, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file60
+vfs_getattr called
+   unique: 62, error: -1 (Operation not permitted), outsize: 16
+unique: 63, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file61
+vfs_getattr called
+   unique: 63, error: -1 (Operation not permitted), outsize: 16
+unique: 64, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file62
+vfs_getattr called
+   unique: 64, error: -1 (Operation not permitted), outsize: 16
+unique: 65, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file63
+vfs_getattr called
+   unique: 65, error: -1 (Operation not permitted), outsize: 16
+unique: 66, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file64
+vfs_getattr called
+   unique: 66, error: -1 (Operation not permitted), outsize: 16
+unique: 67, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file65
+vfs_getattr called
+   unique: 67, error: -1 (Operation not permitted), outsize: 16
+unique: 68, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file66
+vfs_getattr called
+   unique: 68, error: -1 (Operation not permitted), outsize: 16
+unique: 69, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file67
+vfs_getattr called
+   unique: 69, error: -1 (Operation not permitted), outsize: 16
+unique: 70, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file68
+vfs_getattr called
+   unique: 70, error: -1 (Operation not permitted), outsize: 16
+unique: 71, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file69
+vfs_getattr called
+   unique: 71, error: -1 (Operation not permitted), outsize: 16
+unique: 72, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file70
+vfs_getattr called
+   unique: 72, error: -1 (Operation not permitted), outsize: 16
+unique: 73, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file71
+vfs_getattr called
+   unique: 73, error: -1 (Operation not permitted), outsize: 16
+unique: 74, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file72
+vfs_getattr called
+   unique: 74, error: -1 (Operation not permitted), outsize: 16
+unique: 75, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file73
+vfs_getattr called
+   unique: 75, error: -1 (Operation not permitted), outsize: 16
+unique: 76, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file74
+vfs_getattr called
+   unique: 76, error: -1 (Operation not permitted), outsize: 16
+unique: 77, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file75
+vfs_getattr called
+   unique: 77, error: -1 (Operation not permitted), outsize: 16
+unique: 78, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file76
+vfs_getattr called
+   unique: 78, error: -1 (Operation not permitted), outsize: 16
+unique: 79, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file77
+vfs_getattr called
+   unique: 79, error: -1 (Operation not permitted), outsize: 16
+unique: 80, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file78
+vfs_getattr called
+   unique: 80, error: -1 (Operation not permitted), outsize: 16
+unique: 81, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file79
+vfs_getattr called
+   unique: 81, error: -1 (Operation not permitted), outsize: 16
+unique: 82, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file80
+vfs_getattr called
+   unique: 82, error: -1 (Operation not permitted), outsize: 16
+unique: 83, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file81
+vfs_getattr called
+   unique: 83, error: -1 (Operation not permitted), outsize: 16
+unique: 84, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file82
+vfs_getattr called
+   unique: 84, error: -1 (Operation not permitted), outsize: 16
+unique: 85, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file83
+vfs_getattr called
+   unique: 85, error: -1 (Operation not permitted), outsize: 16
+unique: 86, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file84
+vfs_getattr called
+   unique: 86, error: -1 (Operation not permitted), outsize: 16
+unique: 87, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file85
+vfs_getattr called
+   unique: 87, error: -1 (Operation not permitted), outsize: 16
+unique: 88, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file86
+vfs_getattr called
+   unique: 88, error: -1 (Operation not permitted), outsize: 16
+unique: 89, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file87
+vfs_getattr called
+   unique: 89, error: -1 (Operation not permitted), outsize: 16
+unique: 90, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file88
+vfs_getattr called
+   unique: 90, error: -1 (Operation not permitted), outsize: 16
+unique: 91, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file89
+vfs_getattr called
+   unique: 91, error: -1 (Operation not permitted), outsize: 16
+unique: 92, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file90
+vfs_getattr called
+   unique: 92, error: -1 (Operation not permitted), outsize: 16
+unique: 93, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file91
+vfs_getattr called
+   unique: 93, error: -1 (Operation not permitted), outsize: 16
+unique: 94, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file92
+vfs_getattr called
+   unique: 94, error: -1 (Operation not permitted), outsize: 16
+unique: 95, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file93
+vfs_getattr called
+   unique: 95, error: -1 (Operation not permitted), outsize: 16
+unique: 96, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file94
+vfs_getattr called
+   unique: 96, error: -1 (Operation not permitted), outsize: 16
+unique: 97, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file95
+vfs_getattr called
+   unique: 97, error: -1 (Operation not permitted), outsize: 16
+unique: 98, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file96
+vfs_getattr called
+   unique: 98, error: -1 (Operation not permitted), outsize: 16
+unique: 99, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file97
+vfs_getattr called
+   unique: 99, error: -1 (Operation not permitted), outsize: 16
+unique: 100, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file98
+vfs_getattr called
+   unique: 100, error: -1 (Operation not permitted), outsize: 16
+unique: 101, opcode: LOOKUP (1), nodeid: 1, insize: 47
+LOOKUP /file99
+vfs_getattr called
+   unique: 101, error: -1 (Operation not permitted), outsize: 16
+vfs_unmount called
+Disk usage: 102 reads, 2 writes
+RUNNING './3600fs -s -d /tmp/3600fs.IQPCbe'
+unique: 1, opcode: INIT (26), nodeid: 0, insize: 56
+INIT: 7.12
+flags=0x0000007b
+max_readahead=0x00020000
+vfs_mount called
+   INIT: 7.8
+   flags=0x00000001
+   max_readahead=0x00020000
+   max_write=0x00020000
+   unique: 1, error: 0 (Success), outsize: 40
+unique: 2, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test1.txt
+vfs_getattr called
+   unique: 2, error: -1 (Operation not permitted), outsize: 16
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test2.txt
+vfs_getattr called
+   unique: 3, error: -1 (Operation not permitted), outsize: 16
+unique: 4, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test2.txt
+vfs_getattr called
+   unique: 4, error: -1 (Operation not permitted), outsize: 16
+unique: 5, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 5, error: -1 (Operation not permitted), outsize: 16
+unique: 6, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test1.txt
+vfs_getattr called
+   unique: 6, error: -1 (Operation not permitted), outsize: 16
+unique: 7, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 7, error: -1 (Operation not permitted), outsize: 16
+unique: 8, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test4.txt
+vfs_getattr called
+   unique: 8, error: -1 (Operation not permitted), outsize: 16
+unique: 9, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test4.txt
+vfs_getattr called
+   unique: 9, error: -1 (Operation not permitted), outsize: 16
+unique: 10, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 10, error: -1 (Operation not permitted), outsize: 16
+unique: 11, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test1.txt
+vfs_getattr called
+   unique: 11, error: -1 (Operation not permitted), outsize: 16
+unique: 12, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test2.txt
+vfs_getattr called
+   unique: 12, error: -1 (Operation not permitted), outsize: 16
+unique: 13, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test2.txt
+vfs_getattr called
+   unique: 13, error: -1 (Operation not permitted), outsize: 16
+unique: 14, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 14, error: -1 (Operation not permitted), outsize: 16
+unique: 15, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test1.txt
+vfs_getattr called
+   unique: 15, error: -1 (Operation not permitted), outsize: 16
+unique: 16, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 16, error: -1 (Operation not permitted), outsize: 16
+unique: 17, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test4.txt
+vfs_getattr called
+   unique: 17, error: -1 (Operation not permitted), outsize: 16
+unique: 18, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test4.txt
+vfs_getattr called
+   unique: 18, error: -1 (Operation not permitted), outsize: 16
+unique: 19, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 19, error: -1 (Operation not permitted), outsize: 16
+unique: 20, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test1.txt
+vfs_getattr called
+   unique: 20, error: -1 (Operation not permitted), outsize: 16
+unique: 21, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test2.txt
+vfs_getattr called
+   unique: 21, error: -1 (Operation not permitted), outsize: 16
+unique: 22, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test2.txt
+vfs_getattr called
+   unique: 22, error: -1 (Operation not permitted), outsize: 16
+unique: 23, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 23, error: -1 (Operation not permitted), outsize: 16
+unique: 24, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test1.txt
+vfs_getattr called
+   unique: 24, error: -1 (Operation not permitted), outsize: 16
+unique: 25, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 25, error: -1 (Operation not permitted), outsize: 16
+unique: 26, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test4.txt
+vfs_getattr called
+   unique: 26, error: -1 (Operation not permitted), outsize: 16
+unique: 27, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test4.txt
+vfs_getattr called
+   unique: 27, error: -1 (Operation not permitted), outsize: 16
+unique: 28, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 28, error: -1 (Operation not permitted), outsize: 16
+unique: 29, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test1.txt
+vfs_getattr called
+   unique: 29, error: -1 (Operation not permitted), outsize: 16
+unique: 30, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test1.txt
+vfs_getattr called
+   unique: 30, error: -1 (Operation not permitted), outsize: 16
+unique: 31, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test2.txt
+vfs_getattr called
+   unique: 31, error: -1 (Operation not permitted), outsize: 16
+unique: 32, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 32, error: -1 (Operation not permitted), outsize: 16
+unique: 33, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test4.txt
+vfs_getattr called
+   unique: 33, error: -1 (Operation not permitted), outsize: 16
+vfs_unmount called
+Disk usage: 34 reads, 2 writes
+RUNNING './3600fs -s -d /tmp/3600fs.IQPCbe'
+unique: 1, opcode: INIT (26), nodeid: 0, insize: 56
+INIT: 7.12
+flags=0x0000007b
+max_readahead=0x00020000
+vfs_mount called
+   INIT: 7.8
+   flags=0x00000001
+   max_readahead=0x00020000
+   max_write=0x00020000
+   unique: 1, error: 0 (Success), outsize: 40
+unique: 2, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test1.txt
+vfs_getattr called
+   unique: 2, error: -1 (Operation not permitted), outsize: 16
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test2.txt
+vfs_getattr called
+   unique: 3, error: -1 (Operation not permitted), outsize: 16
+unique: 4, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 4, error: -1 (Operation not permitted), outsize: 16
+unique: 5, opcode: OPENDIR (27), nodeid: 1, insize: 48
+   unique: 5, error: 0 (Success), outsize: 32
+unique: 6, opcode: READDIR (28), nodeid: 1, insize: 80
+   unique: 6, error: 0 (Success), outsize: 16
+vfs_unmount called
+Disk usage: 5 reads, 2 writes
+RUNNING './3600fs -s -d /tmp/3600fs.IQPCbe'
+unique: 1, opcode: INIT (26), nodeid: 0, insize: 56
+INIT: 7.12
+flags=0x0000007b
+max_readahead=0x00020000
+vfs_mount called
+   INIT: 7.8
+   flags=0x00000001
+   max_readahead=0x00020000
+   max_write=0x00020000
+   unique: 1, error: 0 (Success), outsize: 40
+unique: 2, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 2, error: -1 (Operation not permitted), outsize: 16
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 3, error: -1 (Operation not permitted), outsize: 16
+unique: 4, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 4, error: -1 (Operation not permitted), outsize: 16
+unique: 5, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 5, error: -1 (Operation not permitted), outsize: 16
+unique: 6, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 6, error: -1 (Operation not permitted), outsize: 16
+unique: 7, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test3.txt
+vfs_getattr called
+   unique: 7, error: -1 (Operation not permitted), outsize: 16
+unique: 8, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test4.txt
+vfs_getattr called
+   unique: 8, error: -1 (Operation not permitted), outsize: 16
+unique: 9, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test4.txt
+vfs_getattr called
+   unique: 9, error: -1 (Operation not permitted), outsize: 16
+unique: 10, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test4.txt
+vfs_getattr called
+   unique: 10, error: -1 (Operation not permitted), outsize: 16
+unique: 11, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test4.txt
+vfs_getattr called
+   unique: 11, error: -1 (Operation not permitted), outsize: 16
+unique: 12, opcode: LOOKUP (1), nodeid: 1, insize: 69
+LOOKUP /abcdefghijklmnopqrstuvwxyzab
+vfs_getattr called
+   unique: 12, error: -1 (Operation not permitted), outsize: 16
+unique: 13, opcode: LOOKUP (1), nodeid: 1, insize: 69
+LOOKUP /abcdefghijklmnopqrstuvwxyzab
+vfs_getattr called
+   unique: 13, error: -1 (Operation not permitted), outsize: 16
+unique: 14, opcode: LOOKUP (1), nodeid: 1, insize: 69
+LOOKUP /abcdefghijklmnopqrstuvwxyzab
+vfs_getattr called
+   unique: 14, error: -1 (Operation not permitted), outsize: 16
+unique: 15, opcode: LOOKUP (1), nodeid: 1, insize: 69
+LOOKUP /abcdefghijklmnopqrstuvwxyzab
+vfs_getattr called
+   unique: 15, error: -1 (Operation not permitted), outsize: 16
+unique: 16, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test4.txt
+vfs_getattr called
+   unique: 16, error: -1 (Operation not permitted), outsize: 16
+unique: 17, opcode: LOOKUP (1), nodeid: 1, insize: 50
+LOOKUP /test4.txt
+vfs_getattr called
+   unique: 17, error: -1 (Operation not permitted), outsize: 16
+vfs_unmount called
+Disk usage: 18 reads, 2 writes
+RUNNING './3600fs -s -d /tmp/3600fs.IQPCbe'
+unique: 1, opcode: INIT (26), nodeid: 0, insize: 56
+INIT: 7.12
+flags=0x0000007b
+max_readahead=0x00020000
+vfs_mount called
+   INIT: 7.8
+   flags=0x00000001
+   max_readahead=0x00020000
+   max_write=0x00020000
+   unique: 1, error: 0 (Success), outsize: 40
+vfs_unmount called
+Disk usage: 2 reads, 2 writes

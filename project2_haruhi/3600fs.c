@@ -96,10 +96,16 @@ static void* vfs_mount(struct fuse_conn_info *conn) {
   }
   if(volblock.mounted != 0){
    fprintf(stderr,"Invalid disk: Disk did not unmount correctly.");    
+   // For now dismount, we will handle bad sectors/blocks later (heh ehe.. heh)
+   dunconnect();
   }
   // TODO: Possibly check dirents for invalid info 
   // (e.g. missing data in dirents). Deal with them maybe.
-  return NULL;
+  // Else, magic number is correct (its our drive) and was unmounted correctly
+  // So we set mounted to be 1 and write vcb to disk
+  volblock.mounted = 1;
+  memcpy(temp,&volblock,sizeof(BLOCKSIZE));
+  dwrite(0,temp);
 }
 
 /*
@@ -153,52 +159,68 @@ static int vfs_getattr(const char *path, struct stat *stbuf) {
 
   // Create a temp block and format it to be a directory entry.
   dirent direntblock;
+  vcb volblock;
   char temp[BLOCKSIZE];
   memset(temp,0,BLOCKSIZE);
-
-  // Traverse through directory entries
-  for(int i = 1; i < 101; i++){
-    dread(i,temp);
-    // Mold temp data to dirent structure direntblock
-    memcpy(&direntblock, temp, sizeof(BLOCKSIZE));
-    // If path does not exist then we cannot grab its attributes
-    if(direntblock.valid && (strcmp(direntblock.name, path) != 0)){
-      printf("Error: File does not exist, cannot get attributes");
-      return -ENOENT;
-    }
-    else if(direntblock.valid && (strcmp(direntblock.name, path) == 0)){
-      // We have a match, path == direntblock.name
-      // Break and copy direntblock info into memory
-
-      // Assume root directory, if we add multiple directories then..
-      // FIXME:
-      /* 
-         if(The path represents the root directory)
-	   stbuf->st_mode = 0777 | S_IFDIR;
-	 else
-	   stbuf->st_mode = <<file mode>> | S_IFREG;
-      */
-      // ELSE: we just keep this
+  
+  if(filename_parser(path) == 0){ // if we are requesting a valid path
+    if(strlen(path) == 1){ // if we are requesting attr of root directory
+      dread(0, temp);
+      memcpy(%volblock, temp, sizeof(BLOCKSIZE));
+      
       struct tm * tm1;
       struct tm * tm2;
       struct tm * tm3;
       tm1 = localtime(&((direntblock.access_time).tv_sec));
       tm2 = localtime(&((direntblock.modify_time).tv_sec));
       tm3 = localtime(&((direntblock.create_time).tv_sec));
-
-      stbuf->st_mode  = 0777 | S_IFDIR;
       
-      stbuf->st_uid = direntblock.userid; 
-      stbuf->st_gid = direntblock.groupid;
+      stbuf->stmode = (volblock.mode & 0x0000ffff) | S_IFDIR; // TODO: Check to ensure volblock.mode might always be 0777
+      
+      stbuf->st_uid = volblock.userid;
+      stbuf->st_gid = volblock.groupid;
       stbuf->st_atime = mktime(tm1); 
       stbuf->st_mtime = mktime(tm2);
       stbuf->st_ctime = mktime(tm3);
-      stbuf->st_size = direntblock.size;
-      stbuf->st_blocks = (int) (direntblock.size / BLOCKSIZE);
-      return 0;
+      stbuf->st_size = BLOCKSIZE;
+      stbuf->st_blocks = 1;
+    } else { // if we are requesting attr of a file
+
+      // Traverse through directory entries
+      for(int i = 1; i < 101; i++){
+        dread(i,temp);
+        // Mold temp data to dirent structure direntblock
+        memcpy(&direntblock, temp, sizeof(BLOCKSIZE));
+        if(direntblock.valid && (strcmp(direntblock.name, path) == 0)){
+          // We have a match, path == direntblock.name
+          // Break and copy direntblock info into memory
+          struct tm * tm1;
+          struct tm * tm2;
+          struct tm * tm3;
+          tm1 = localtime(&((direntblock.access_time).tv_sec));
+          tm2 = localtime(&((direntblock.modify_time).tv_sec));
+          tm3 = localtime(&((direntblock.create_time).tv_sec));
+
+          stbuf->st_mode  = (direntblock.mode & 0x0000ffff) | S_IFREG;
+      
+          stbuf->st_uid = direntblock.userid; 
+          stbuf->st_gid = direntblock.groupid;
+          
+          stbuf->st_atime = mktime(tm1); 
+          stbuf->st_mtime = mktime(tm2);
+          stbuf->st_ctime = mktime(tm3);
+          
+          stbuf->st_size = direntblock.size;
+          stbuf->st_blocks = (int) (direntblock.size / BLOCKSIZE);
+          // We have updated stbuf, return success.
+          return 0;
+         }
+      }
+      // Traversed through all 100 dirents and we did not write to st_buf then...
+      return -ENOENT;
     }
-  }
-  return -1; // ERROR ERROR ERROR
+  }else // if we have a bad path
+     return -1;
 }
 /*
  * Given an absolute path to a directory (which may or may not end in
@@ -253,8 +275,10 @@ static int vfs_readdir(const char *path, void *buf, fuse_fill_dir_t filler,
 static int vfs_create(const char *path, mode_t mode, struct fuse_file_info *fi) {      
   // Next, we want to check the path for errors and extract file name.
 
-  if(filename_parser(path)!=0) // Check for valid path and set filename.
+  if(filename_parser(path) != 0) // Check for valid path and set filename.
     return -1;
+
+  printf("%s", path);
 
   // Create a temp block and format it to be a directory entry.
   dirent direntblock;
@@ -295,6 +319,8 @@ static int vfs_create(const char *path, mode_t mode, struct fuse_file_info *fi) 
       return 0;
     }
   }
+  // If there is no more room on the disk return -1;
+  return -1;
 }
 
 /*
